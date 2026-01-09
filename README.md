@@ -86,3 +86,24 @@ v_revenue_by_plan – Revenue contribution by plan
 v_company_kpis – Executive-level metrics
 
 This approach reflects real analytics engineering practices.
+
+# How to Run
+
+Generate synthetic data:
+
+python generate_data.py
+
+
+Create tables in PostgreSQL:
+
+\i create_tables.sql
+
+
+Load CSVs using COPY
+
+Create views:
+
+\i views.sql
+
+
+Connect dashboards to PostgreSQL
